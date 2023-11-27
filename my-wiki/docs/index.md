@@ -18,10 +18,12 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 wiki资源网站
 https://lianghaoxun.github.io/pytorch_for_l_learn/
-第 1 步：生成 SSH 密钥
+第 1 步：生成 SSH 密钥参考 
+https://dev.classmethod.jp/articles/fix-gitgithub-com-permission-denied-publickey-fatal-could-not-read-from-remote-repository/
+
 ssh-keygen
-git init
-git commit -m"update"
-git remote add origin git@github.com:lianghaoxun/pytorch_for_l_learn.git
-git push -u origin main
+
+
+
+
 
