@@ -1,0 +1,889 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../1.%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>一、模型 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              一、模型
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一、pyTorch 工作流程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    一、模型
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    一、模型
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.二分类模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.二分类模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）优化例如加入多个层
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）训练过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3sequential" class="md-nav__link">
+    <span class="md-ellipsis">
+      （3）Sequential可以快速生成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4relu" class="md-nav__link">
+    <span class="md-ellipsis">
+      （4）优化非线性激活函数的ReLU示范
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      （5）预测
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.多分类
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.多分类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）训练
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.二分类模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.二分类模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）优化例如加入多个层
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）训练过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3sequential" class="md-nav__link">
+    <span class="md-ellipsis">
+      （3）Sequential可以快速生成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4relu" class="md-nav__link">
+    <span class="md-ellipsis">
+      （4）优化非线性激活函数的ReLU示范
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      （5）预测
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.多分类
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.多分类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）训练
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">一、模型</h1>
+<h2 id="1">1.二分类模型</h2>
+<p>这里以一个两列预测一列为例子</p>
+<pre><code class="language-python"># 1. Construct a model class that subclasses nn.Module
+class CircleModelV0(nn.Module):
+    def __init__(self):
+        super().__init__()
+        # 2. Create 2 nn.Linear layers capable of handling X and y input and output shapes
+        self.layer_1 = nn.Linear(in_features=2, out_features=5) # takes in 2 features (X), produces 5 features
+        self.layer_2 = nn.Linear(in_features=5, out_features=1) # takes in 5 features, produces 1 feature (y)
+
+    # 3. Define a forward method containing the forward pass computation
+    def forward(self, x):
+        # Return the output of layer_2, a single feature, the same shape as y
+        return self.layer_2(self.layer_1(x)) # computation goes through layer_1 first then the output of layer_1 goes through layer_2
+
+# 4. Create an instance of the model and send it to target device
+model_0 = CircleModelV0().to(device)
+model_0
+</code></pre>
+<h3 id="1_1">（1）优化例如加入多个层</h3>
+<pre><code class="language-python">class CircleModelV1(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.layer_1 = nn.Linear(in_features=2, out_features=10)
+        self.layer_2 = nn.Linear(in_features=10, out_features=10) # extra layer
+        self.layer_3 = nn.Linear(in_features=10, out_features=1)
+
+    def forward(self, x): # note: always make sure forward is spelt correctly!
+        # Creating a model like this is the same as below, though below
+        # generally benefits from speedups where possible.
+        # z = self.layer_1(x)
+        # z = self.layer_2(z)
+        # z = self.layer_3(z)
+        # return z
+        return self.layer_3(self.layer_2(self.layer_1(x)))
+
+model_1 = CircleModelV1().to(device)
+model_1
+</code></pre>
+<h3 id="2">（2）训练过程</h3>
+<pre><code class="language-python">torch.manual_seed(42)
+# Create a loss function
+# loss_fn = nn.BCELoss() # BCELoss = no sigmoid built-in
+loss_fn = nn.BCEWithLogitsLoss() # BCEWithLogitsLoss = sigmoid built-in
+
+# Create an optimizer
+optimizer = torch.optim.SGD(params=model_0.parameters(), 
+                            lr=0.1)
+epochs = 1000 # Train for longer
+
+# Put data to target device
+X_train, y_train = X_train.to(device), y_train.to(device)
+X_test, y_test = X_test.to(device), y_test.to(device)
+
+for epoch in range(epochs):
+    ### Training
+    # 1. Forward pass
+    y_logits = model_1(X_train).squeeze()
+    y_pred = torch.round(torch.sigmoid(y_logits)) # logits -&gt; predicition probabilities -&gt; prediction labels
+
+    # 2. Calculate loss/accuracy
+    loss = loss_fn(y_logits, y_train)
+    acc = accuracy_fn(y_true=y_train, 
+                      y_pred=y_pred)
+
+    # 3. Optimizer zero grad
+    optimizer.zero_grad()
+
+    # 4. Loss backwards
+    loss.backward()
+
+    # 5. Optimizer step
+    optimizer.step()
+
+    ### Testing
+    model_1.eval()
+    with torch.inference_mode():
+        # 1. Forward pass
+        test_logits = model_1(X_test).squeeze() 
+        test_pred = torch.round(torch.sigmoid(test_logits))
+        # 2. Caculate loss/accuracy
+        test_loss = loss_fn(test_logits,
+                            y_test)
+        test_acc = accuracy_fn(y_true=y_test,
+                               y_pred=test_pred)
+
+    # Print out what's happening every 10 epochs
+    if epoch % 100 == 0:
+        print(f&quot;Epoch: {epoch} | Loss: {loss:.5f}, Accuracy: {acc:.2f}% | Test loss: {test_loss:.5f}, Test acc: {test_acc:.2f}%&quot;)
+
+</code></pre>
+<h3 id="3sequential">（3）Sequential可以快速生成</h3>
+<pre><code class="language-python"># Same architecture as model_1 (but using nn.Sequential)
+model_2 = nn.Sequential(
+    nn.Linear(in_features=1, out_features=10),
+    nn.Linear(in_features=10, out_features=10),
+    nn.Linear(in_features=10, out_features=1)
+).to(device)
+
+model_2
+</code></pre>
+<h3 id="4relu">（4）优化非线性激活函数的ReLU示范</h3>
+<p>PyTorch 有一堆<a href="https://pytorch.org/docs/stable/nn.html#non-linear-activations-weighted-sum-nonlinearity">现成的非线性激活函数</a>，它们可以做类似但不同的事情。</p>
+<p>最常见和性能最好的之一是 [ReLU]( https://en.wikipedia.org/wiki/Rectifier_(neural_networks ) （修正线性单元，<a href="https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html"><code>torch.nn.ReLU()</code></a>）。</p>
+<pre><code class="language-python"># Build model with non-linear activation function
+from torch import nn
+class CircleModelV2(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.layer_1 = nn.Linear(in_features=2, out_features=10)
+        self.layer_2 = nn.Linear(in_features=10, out_features=10)
+        self.layer_3 = nn.Linear(in_features=10, out_features=1)
+        self.relu = nn.ReLU() # &lt;- add in ReLU activation function
+        # Can also put sigmoid in the model 
+        # This would mean you don't need to use it on the predictions
+        # self.sigmoid = nn.Sigmoid()
+
+    def forward(self, x):
+      # Intersperse the ReLU activation function between layers
+       return self.layer_3(self.relu(self.layer_2(self.relu(self.layer_1(x)))))
+
+model_3 = CircleModelV2().to(device)
+print(model_3)
+</code></pre>
+<h3 id="5">（5）预测</h3>
+<pre><code class="language-python"># Make predictions
+model_3.eval()
+with torch.inference_mode():
+    y_preds = torch.round(torch.sigmoid(model_3(X_test))).squeeze()
+y_preds[:10], y[:10] # want preds in same format as truth labels
+</code></pre>
+<h2 id="2_1">2.多分类</h2>
+<p>多分类模型</p>
+<pre><code class="language-python">from torch import nn
+
+# Build model
+class BlobModel(nn.Module):
+    def __init__(self, input_features, output_features, hidden_units=8):
+        &quot;&quot;&quot;Initializes all required hyperparameters for a multi-class classification model.
+
+        Args:
+            input_features (int): Number of input features to the model.
+            out_features (int): Number of output features of the model
+              (how many classes there are).
+            hidden_units (int): Number of hidden units between layers, default 8.
+        &quot;&quot;&quot;
+        super().__init__()
+        self.linear_layer_stack = nn.Sequential(
+            nn.Linear(in_features=input_features, out_features=hidden_units),
+            # nn.ReLU(), # &lt;- does our dataset require non-linear layers? (try uncommenting and see if the results change)
+            nn.Linear(in_features=hidden_units, out_features=hidden_units),
+            # nn.ReLU(), # &lt;- does our dataset require non-linear layers? (try uncommenting and see if the results change)
+            nn.Linear(in_features=hidden_units, out_features=output_features), # how many classes are there?
+        )
+
+    def forward(self, x):
+        return self.linear_layer_stack(x)
+
+# Create an instance of BlobModel and send it to the target device
+model_4 = BlobModel(input_features=NUM_FEATURES, 
+                    output_features=NUM_CLASSES, 
+                    hidden_units=8).to(device)
+model_4
+</code></pre>
+<h3 id="1_2">（1）训练</h3>
+<pre><code class="language-python"># Fit the model
+torch.manual_seed(42)
+
+# Set number of epochs
+epochs = 100
+
+# Put data to target device
+X_blob_train, y_blob_train = X_blob_train.to(device), y_blob_train.to(device)
+X_blob_test, y_blob_test = X_blob_test.to(device), y_blob_test.to(device)
+
+for epoch in range(epochs):
+    ### Training
+    model_4.train()
+
+    # 1. Forward pass
+    y_logits = model_4(X_blob_train) # model outputs raw logits 
+    y_pred = torch.softmax(y_logits, dim=1).argmax(dim=1) # go from logits -&gt; prediction probabilities -&gt; prediction labels
+    # print(y_logits)
+    # 2. Calculate loss and accuracy
+    loss = loss_fn(y_logits, y_blob_train) 
+    acc = accuracy_fn(y_true=y_blob_train,
+                      y_pred=y_pred)
+
+    # 3. Optimizer zero grad
+    optimizer.zero_grad()
+
+    # 4. Loss backwards
+    loss.backward()
+
+    # 5. Optimizer step
+    optimizer.step()
+
+    ### Testing
+    model_4.eval()
+    with torch.inference_mode():
+      # 1. Forward pass
+      test_logits = model_4(X_blob_test)
+      test_pred = torch.softmax(test_logits, dim=1).argmax(dim=1)
+      # 2. Calculate test loss and accuracy
+      test_loss = loss_fn(test_logits, y_blob_test)
+      test_acc = accuracy_fn(y_true=y_blob_test,
+                             y_pred=test_pred)
+
+    # Print out what's happening
+    if epoch % 10 == 0:
+        print(f&quot;Epoch: {epoch} | Loss: {loss:.5f}, Acc: {acc:.2f}% | Test Loss: {test_loss:.5f}, Test Acc: {test_acc:.2f}%&quot;) 
+</code></pre>
+<h1 id="_2">二、评估</h1>
+<h2 id="1pytorch">1pytorch 有两种二元交叉熵实现：</h2>
+<ol>
+<li><a href="https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html"><code>torch.nn.BCELoss()</code></a>- 创建一个损失函数，用于测量目标（标签）和输入（特征）之间的二元交叉熵。</li>
+<li><a href="https://pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html"><code>torch.nn.BCEWithLogitsLoss()</code></a>- 这与上面相同，只是它有一个<a href="https://pytorch.org/docs/stable/generated/torch.nn.Sigmoid.html"><code>nn.Sigmoid</code></a>内置的 sigmoid 层 ( )（我们很快就会看到这意味着什么）。</li>
+</ol>
+<pre><code class="language-python"># Create a loss function
+# loss_fn = nn.BCELoss() # BCELoss = no sigmoid built-in
+loss_fn = nn.BCEWithLogitsLoss() # BCEWithLogitsLoss = sigmoid built-in
+
+# Create an optimizer
+optimizer = torch.optim.SGD(params=model_0.parameters(), 
+                            lr=0.1)
+</code></pre>
+<h2 id="2_2">2.多元损失函数</h2>
+<pre><code># Create loss and optimizer
+loss_fn = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(model_4.parameters(), 
+                            lr=0.1) # exercise: try changing the learning rate here and seeing what happens to the model's performance
+</code></pre>
+<h2 id="2calculate-accuracy-a-classification-metric">2.Calculate accuracy (a classification metric)</h2>
+<pre><code class="language-python">def accuracy_fn(y_true, y_pred):
+    correct = torch.eq(y_true, y_pred).sum().item() # torch.eq() calculates where two tensors are equal
+    acc = (correct / len(y_pred)) * 100 
+    return acc
+</code></pre>
+<h2 id="3">3.分类指标</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>描述</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accuracy</td>
+<td>Out of 100 predictions, how many does your model get correct? E.g. 95% accuracy means it gets 95/100 predictions correct.</td>
+<td><a href="https://torchmetrics.readthedocs.io/en/stable/classification/accuracy.html#id3"><code>torchmetrics.Accuracy()</code></a> or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html"><code>sklearn.metrics.accuracy_score()</code></a></td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>Proportion of true positives over total number of samples. Higher precision leads to less false positives (model predicts 1 when it should've been 0).</td>
+<td><a href="https://torchmetrics.readthedocs.io/en/stable/classification/precision.html#id4"><code>torchmetrics.Precision()</code></a> or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html"><code>sklearn.metrics.precision_score()</code></a></td>
+</tr>
+<tr>
+<td>Recall</td>
+<td>Proportion of true positives over total number of true positives and false negatives (model predicts 0 when it should've been 1). Higher recall leads to less false negatives.</td>
+<td><a href="https://torchmetrics.readthedocs.io/en/stable/classification/recall.html#id5"><code>torchmetrics.Recall()</code></a> or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html"><code>sklearn.metrics.recall_score()</code></a></td>
+</tr>
+<tr>
+<td>F1-score</td>
+<td>Combines precision and recall into one metric. 1 is best, 0 is worst.</td>
+<td><a href="https://torchmetrics.readthedocs.io/en/stable/classification/f1_score.html#f1score"><code>torchmetrics.F1Score()</code></a> or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html"><code>sklearn.metrics.f1_score()</code></a></td>
+</tr>
+<tr>
+<td><a href="https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/">Confusion matrix</a></td>
+<td>Compares the predicted values with the true values in a tabular way, if 100% correct, all values in the matrix will be top left to bottom right (diagnol line).</td>
+<td><a href="https://torchmetrics.readthedocs.io/en/stable/classification/confusion_matrix.html#confusionmatrix"><code>torchmetrics.ConfusionMatrix</code></a> or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ConfusionMatrixDisplay.html#sklearn.metrics.ConfusionMatrixDisplay.from_predictions"><code>sklearn.metrics.plot_confusion_matrix()</code></a></td>
+</tr>
+<tr>
+<td>Classification report</td>
+<td>Collection of some of the main classification metrics such as precision, recall and f1-score.</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html"><code>sklearn.metrics.classification_report()</code></a>Accuracy</td>
+</tr>
+</tbody>
+</table>
+<p>示范</p>
+<pre><code class="language-python">try:
+    from torchmetrics import Accuracy
+except:
+    !pip install torchmetrics==0.9.3 # this is the version we're using in this notebook (later versions exist here: https://torchmetrics.readthedocs.io/en/stable/generated/CHANGELOG.html#changelog)
+    from torchmetrics import Accuracy
+
+# Setup metric and make sure it's on the target device
+torchmetrics_accuracy = Accuracy(task='multiclass', num_classes=4).to(device)
+
+# Calculate accuracy
+torchmetrics_accuracy(y_preds, y_blob_test)
+</code></pre>
+<h1 id="_3">三、模型的输出</h1>
+<h2 id="1logits">1.logits</h2>
+<p><strong>Logits 解释为</strong><strong>模型的</strong>未标准化（或尚未标准化）<strong>预测</strong>（或输出） 。*<em>这些可以给出结果，但我们通常不会停止于 logits，因为解释它们的原始值并不容易。查看<a href="https://en.wikipedia.org/wiki/Logit">它们的定义</a>以帮助理解</em>logits是如何产生的。</p>
+<pre><code class="language-python"># 查看测试数据前向传播的前 5 个输出 
+y_logits = model_0(X_test.to(device))[:5] 
+y_logits
+</code></pre>
+<h2 id="2-logits">2.对 logits 进行标准化</h2>
+<h3 id="1softmax">（1）softmax</h3>
+<p>使用<a href="https://en.wikipedia.org/wiki/Softmax_function#Softmax_Normalization">softmax</a>，其中所有结果总和为<code>1</code>，因此我们可以将它们视为概率：</p>
+<pre><code class="language-python"># 对模型 logits 使用 sigmoid 
+y_pred_probs = torch.sigmoid(y_logits) 
+y_pred_probs
+</code></pre>
+<p>对 sigmoid 激活函数的输出进行舍入</p>
+<ul>
+<li>如果<code>y_pred_probs</code>&gt;= 0.5，<code>y=1</code>（1 级）</li>
+<li>如果<code>y_pred_probs</code>&lt; 0.5，<code>y=0</code>（0 级）</li>
+</ul>
+<pre><code># 找到预测标签（围绕预测概率）
+y_preds  =  torch . round ( y_pred_probs ) 
+</code></pre>
+<h3 id="2argmax">（2）argmax 多分类</h3>
+<pre><code class="language-python"># 将预测的 logits 转换为预测概率
+y_pred_probs  =  torch . softmax ( y_logits ,  dim = 1 ) 
+
+# 将预测概率转换为预测标签
+y_preds  =  y_pred_probs . argmax ( dim = 1 ) 
+</code></pre>
+<h2 id="3_1">3.训练效果</h2>
+<h3 id="1plot_decision_boundary">（1）plot_decision_boundary()</h3>
+<p>它包含一个有用的函数，名为<code>plot_decision_boundary()</code>，它创建一个 NumPy 网格来直观地绘制我们的模型预测某些类的不同点。</p>
+<pre><code>import requests
+from pathlib import Path 
+
+# Download helper functions from Learn PyTorch repo (if not already downloaded)
+if Path(&quot;helper_functions.py&quot;).is_file():
+  print(&quot;helper_functions.py already exists, skipping download&quot;)
+else:
+  print(&quot;Downloading helper_functions.py&quot;)
+  request = requests.get(&quot;https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/helper_functions.py&quot;)
+  with open(&quot;helper_functions.py&quot;, &quot;wb&quot;) as f:
+    f.write(request.content)
+
+from helper_functions import plot_predictions, plot_decision_boundary
+</code></pre>
+<pre><code># Plot decision boundaries for training and test sets
+plt.figure(figsize=(12, 6))
+plt.subplot(1, 2, 1)
+plt.title(&quot;Train&quot;)
+plot_decision_boundary(model_0, X_train, y_train)
+plt.subplot(1, 2, 2)
+plt.title(&quot;Test&quot;)
+plot_decision_boundary(model_0, X_test, y_test)
+</code></pre>
+<p><img alt="image-20230710130008832" src="../img/image-20230710130008832.png" /></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>
