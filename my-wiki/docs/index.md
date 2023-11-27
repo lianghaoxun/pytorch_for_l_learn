@@ -10,27 +10,18 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs -h` - Print help message and exit.
 
 ## Project layout
-
+    自测命令 mkdocs serve   mkdocs gh-deploy
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
 wiki资源网站
-git@github.com:lianghaoxun/pytorch_for_l_learn.git
-
-git config --global user.email “87295223+lianghaoxun@users.noreply.github.com”
-git config --global user.name "lianghaoxun"
-
-
+https://lianghaoxun.github.io/pytorch_for_l_learn/
 第 1 步：生成 SSH 密钥
 ssh-keygen
-
-
 git init
 git commit -m"update"
-
 git remote add origin git@github.com:lianghaoxun/pytorch_for_l_learn.git
-
 git push -u origin main
-mkdocs gh-deploy
+
