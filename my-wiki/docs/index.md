@@ -28,6 +28,8 @@ ssh-keygen
 
 
 git init
+git commit -m"update"
+
 git remote add origin git@github.com:lianghaoxun/pytorch_for_l_learn.git
 
 git push -u origin main
