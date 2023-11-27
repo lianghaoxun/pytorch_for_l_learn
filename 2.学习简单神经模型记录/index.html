@@ -18,7 +18,7 @@
     
     
       
-        <title>一、模型 - My Docs</title>
+        <title>2、模型 - My Docs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#2" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              一、模型
+              2、模型
             
           </span>
         </div>
@@ -213,7 +213,7 @@
         
   
   <span class="md-ellipsis">
-    一、pyTorch 工作流程
+    1、pyTorch 工作流程
   </span>
   
 
@@ -242,7 +242,7 @@
           
   
   <span class="md-ellipsis">
-    一、模型
+    2、模型
   </span>
   
 
@@ -253,7 +253,7 @@
         
   
   <span class="md-ellipsis">
-    一、模型
+    2、模型
   </span>
   
 
@@ -294,7 +294,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
       （2）训练过程
     </span>
@@ -335,7 +335,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#2_2" class="md-nav__link">
     <span class="md-ellipsis">
       2.多分类
     </span>
@@ -412,7 +412,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
       （2）训练过程
     </span>
@@ -453,7 +453,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#2_2" class="md-nav__link">
     <span class="md-ellipsis">
       2.多分类
     </span>
@@ -491,7 +491,7 @@
                   
 
 
-<h1 id="_1">一、模型</h1>
+<h1 id="2">2、模型</h1>
 <h2 id="1">1.二分类模型</h2>
 <p>这里以一个两列预测一列为例子</p>
 <pre><code class="language-python"># 1. Construct a model class that subclasses nn.Module
@@ -531,7 +531,7 @@ model_0
 model_1 = CircleModelV1().to(device)
 model_1
 </code></pre>
-<h3 id="2">（2）训练过程</h3>
+<h3 id="2_1">（2）训练过程</h3>
 <pre><code class="language-python">torch.manual_seed(42)
 # Create a loss function
 # loss_fn = nn.BCELoss() # BCELoss = no sigmoid built-in
@@ -623,7 +623,7 @@ with torch.inference_mode():
     y_preds = torch.round(torch.sigmoid(model_3(X_test))).squeeze()
 y_preds[:10], y[:10] # want preds in same format as truth labels
 </code></pre>
-<h2 id="2_1">2.多分类</h2>
+<h2 id="2_2">2.多分类</h2>
 <p>多分类模型</p>
 <pre><code class="language-python">from torch import nn
 
@@ -704,7 +704,7 @@ for epoch in range(epochs):
     if epoch % 10 == 0:
         print(f&quot;Epoch: {epoch} | Loss: {loss:.5f}, Acc: {acc:.2f}% | Test Loss: {test_loss:.5f}, Test Acc: {test_acc:.2f}%&quot;) 
 </code></pre>
-<h1 id="_2">二、评估</h1>
+<h1 id="_1">二、评估</h1>
 <h2 id="1pytorch">1pytorch 有两种二元交叉熵实现：</h2>
 <ol>
 <li><a href="https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html"><code>torch.nn.BCELoss()</code></a>- 创建一个损失函数，用于测量目标（标签）和输入（特征）之间的二元交叉熵。</li>
@@ -718,7 +718,7 @@ loss_fn = nn.BCEWithLogitsLoss() # BCEWithLogitsLoss = sigmoid built-in
 optimizer = torch.optim.SGD(params=model_0.parameters(), 
                             lr=0.1)
 </code></pre>
-<h2 id="2_2">2.多元损失函数</h2>
+<h2 id="2_3">2.多元损失函数</h2>
 <pre><code># Create loss and optimizer
 loss_fn = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model_4.parameters(), 
@@ -785,7 +785,7 @@ torchmetrics_accuracy = Accuracy(task='multiclass', num_classes=4).to(device)
 # Calculate accuracy
 torchmetrics_accuracy(y_preds, y_blob_test)
 </code></pre>
-<h1 id="_3">三、模型的输出</h1>
+<h1 id="_2">三、模型的输出</h1>
 <h2 id="1logits">1.logits</h2>
 <p><strong>Logits 解释为</strong><strong>模型的</strong>未标准化（或尚未标准化）<strong>预测</strong>（或输出） 。*<em>这些可以给出结果，但我们通常不会停止于 logits，因为解释它们的原始值并不容易。查看<a href="https://en.wikipedia.org/wiki/Logit">它们的定义</a>以帮助理解</em>logits是如何产生的。</p>
 <pre><code class="language-python"># 查看测试数据前向传播的前 5 个输出 
