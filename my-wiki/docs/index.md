@@ -25,3 +25,10 @@ git config --global user.name "lianghaoxun"
 
 第 1 步：生成 SSH 密钥
 ssh-keygen
+
+
+git init
+git remote add origin git@github.com:lianghaoxun/pytorch_for_l_learn.git
+
+git push -u origin main
+mkdocs gh-deploy
