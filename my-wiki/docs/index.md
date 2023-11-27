@@ -17,3 +17,11 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         ...       # Other markdown pages, images and other files.
 
 wiki资源网站
+git@github.com:lianghaoxun/pytorch_for_l_learn.git
+
+git config --global user.email “87295223+lianghaoxun@users.noreply.github.com”
+git config --global user.name "lianghaoxun"
+
+
+第 1 步：生成 SSH 密钥
+ssh-keygen
