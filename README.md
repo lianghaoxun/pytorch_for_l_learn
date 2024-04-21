@@ -21,12 +21,12 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         
         ...       # Other markdown pages, images and other files.
 
-wiki资源网站
-https://lianghaoxun.github.io/pytorch_for_l_learn/
-第 1 步：生成 SSH 密钥参考 
-https://dev.classmethod.jp/articles/fix-gitgithub-com-permission-denied-publickey-fatal-could-not-read-from-remote-repository/
+我的资源网站  
+https://lianghaoxun.github.io/pytorch_for_l_learn/  
+第 1 步：生成 SSH 密钥参考   
+https://dev.classmethod.jp/articles/fix-gitgithub-com-permission-denied-publickey-fatal-could-not-read-from-remote-repository/  
 
-终端运行此命令，复制到github ssh秘钥即可
+终端运行此命令，复制到github ssh秘钥即可  
 ```python
 ssh-keygen
 ```
